@@ -1,0 +1,1 @@
+# negociacoes_bolsa_de_valores_TS
