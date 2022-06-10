@@ -1,7 +1,9 @@
 {
     "compilerOptions": {
         "outDir": "dist/js",
-        "target": "ES6"
+        "target": "ES6",
+        "noEmitOnError": true, // só permite compilar se não houver erros
+        "noImplicitAny": true  //não permite complilar se não ter tipagem definida
     },
     "include": ["app/**/*"]
 }
