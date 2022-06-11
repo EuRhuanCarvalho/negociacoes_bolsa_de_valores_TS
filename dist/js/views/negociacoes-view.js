@@ -1,4 +1,4 @@
-export class negociacoesView {
+export class NegociacoesView {
     template() {
         return `
         <table class="table table-hover table-bordered">
@@ -10,7 +10,7 @@ export class negociacoesView {
                 </tr>
             </thead>
             <tbody>
-                
+
             </tbody>
         </table>
         `;
