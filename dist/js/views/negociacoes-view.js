@@ -19,10 +19,9 @@ export class NegociacoesView {
                             <td>?</td>
                             <td>${negociacao.quantidade}</td>
                             <td>${negociacao.valor}</td>
-                        </tr>
-                    
+                        </tr>                    
                     `;
-        })}
+        }).join('')}
             </tbody>
         </table>
         `;
