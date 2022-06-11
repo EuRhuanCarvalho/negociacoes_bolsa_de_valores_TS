@@ -7,18 +7,24 @@ export class Negociacao {
         private _valor: number       
     ) {}
     
-
-    get valor(): number {
-        return this._valor;
-    }
-
-    get quantidade(): number {
-        return this._quantidade * this._valor;
-    }
-
+    
     get data(): Date { // aplicando programação defensiva para não alterar a data
         const data = new Date(this._data.getTime());
         return data;
 
     }
+    
+    get valor(): number {
+        return this._valor;
+    }
+
+    get quantidade(): number {
+        return this._quantidade;
+    }
+
+    get volume(): number {
+        return this._quantidade * this._valor;
+    }
+
 }
+
