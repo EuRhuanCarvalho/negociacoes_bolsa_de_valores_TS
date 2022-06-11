@@ -6,8 +6,13 @@ export class Negociacao {
         private _quantidade: number, 
         private _valor: number       
     ) {}
+    
 
-    get volume(): number {
+    get valor(): number {
+        return this._valor;
+    }
+
+    get quantidade(): number {
         return this._quantidade * this._valor;
     }
 
