@@ -2,12 +2,18 @@ export class Negociacao {
  
 
     constructor( // muito cuidado pois o readonly não impossibilita completamente a alteração. Usado metodos Set possibilitam isso. Ex: SetDate
-        public readonly data: Date, 
-        public readonly quantidade: number, 
-        public readonly valor: number       
+        private _data: Date, 
+        private _quantidade: number, 
+        private _valor: number       
     ) {}
 
     get volume(): number {
-        return this.quantidade * this.valor;
+        return this._quantidade * this._valor;
+    }
+
+    get data(): Date { // aplicando programação defensiva para não alterar a data
+        const data = new Date(this._data.getTime());
+        return data;
+
     }
 }
